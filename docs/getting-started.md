@@ -4,7 +4,7 @@ Create an 800 by 450 WebP cover from a supplied image. Follow
 [Installation](installation.md) first and run `vendor/bin/image doctor` to check
 that GD or Imagick can read PNG and write WebP.
 
-Download the [example source](assets/examples/first-source.png) into your project
+Download the [example source](https://raw.githubusercontent.com/altophp/image/main/docs/assets/examples/first-source.png) into your project
 as `source.png`. This original ALTO documentation illustration is 1200 by 800
 pixels and is distributed under the repository's MIT license.
 
