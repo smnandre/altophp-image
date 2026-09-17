@@ -1,0 +1,29 @@
+{
+    "parents": {
+        "operations/flip": "transformations",
+        "operations/tint": "transformations",
+        "operations/blur": "transformations",
+        "operations/crop": "transformations",
+        "operations/resize": "transformations",
+        "operations/scale": "transformations",
+        "operations/orient": "transformations",
+        "operations/contain": "transformations",
+        "operations/pixelate": "transformations",
+        "operations/invert": "transformations",
+        "operations/rotate": "transformations",
+        "operations/stretch": "transformations",
+        "operations/flatten": "transformations",
+        "operations/fit": "transformations",
+        "operations/grayscale": "transformations",
+        "operations/overlay": "transformations",
+        "operations/cover": "transformations",
+        "operations/adjust": "transformations",
+        "operations/trim": "transformations",
+        "operations/sharpen": "transformations",
+        "operations/convert-colour-profile": "transformations",
+        "operations/extend": "transformations",
+        "drivers/gd": "drivers",
+        "drivers/imagick": "drivers",
+        "drivers/writing-a-driver": "drivers"
+    }
+}

@@ -1,10 +1,19 @@
-# ALTO Image documentation
+# Image
 
 ALTO Image provides immutable image requests, predictable geometry, and shared
 decoding for multiple outputs. Start with the common workflow, then use the
 task guides or API reference as needed.
 
-## Start here
+The original stays unchanged. A single source can produce several sizes through
+[Image sets](image-sets.md), sharing its decoded pixels within one render batch.
+Lazy requests defer pixel work until an output is requested; inspection can
+project geometry first. Formats and exact behavior depend on the chosen driver.
+
+![An 800 by 450 cover generated from the first tutorial source](assets/examples/first-cover.webp)
+
+[Getting started](getting-started.md) with a complete, reproducible script.
+
+## Introduction
 
 - [Installation](installation.md)
 - [Getting started](getting-started.md)
@@ -20,36 +29,11 @@ task guides or API reference as needed.
 
 ## Operations
 
-- [Overview](transformations.md)
-- [Cover](operations/cover.md)
-- [Contain](operations/contain.md)
-- [Fit](operations/fit.md)
-- [Scale](operations/scale.md)
-- [Stretch](operations/stretch.md)
-- [Resize](operations/resize.md)
-- [Crop](operations/crop.md)
-- [Extend](operations/extend.md)
-- [Trim](operations/trim.md)
-- [Rotate](operations/rotate.md)
-- [Flip](operations/flip.md)
-- [Orient](operations/orient.md)
-- [Flatten](operations/flatten.md)
-- [Overlay](operations/overlay.md)
-- [Blur](operations/blur.md)
-- [Sharpen](operations/sharpen.md)
-- [Adjust](operations/adjust.md)
-- [Grayscale](operations/grayscale.md)
-- [Invert](operations/invert.md)
-- [Pixelate](operations/pixelate.md)
-- [Tint](operations/tint.md)
-- [Colour profile](operations/convert-colour-profile.md)
+- [All operations](transformations.md)
 
 ## Drivers
 
-- [Drivers](drivers/index.md)
-- [GD](drivers/gd.md)
-- [Imagick](drivers/imagick.md)
-- [Writing a driver](drivers/writing-a-driver.md)
+- [Driver selection](drivers/index.md)
 
 ## Reference
 
@@ -58,5 +42,11 @@ task guides or API reference as needed.
 - [Extension contracts](api/extension-contracts.md)
 - [Exceptions](api/exceptions.md)
 
-See the [security policy](../SECURITY.md) for deployment boundaries and
-[contributing](../CONTRIBUTING.md) for development requirements.
+See the [security policy](https://github.com/altophp/image/blob/main/SECURITY.md)
+for deployment boundaries.
+
+## Package
+
+- [Changelog](https://github.com/altophp/image/blob/main/CHANGELOG.md)
+- [Contributing](https://github.com/altophp/image/blob/main/CONTRIBUTING.md)
+- [Support](https://github.com/altophp/image/blob/main/SUPPORT.md)

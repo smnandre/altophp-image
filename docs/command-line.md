@@ -60,3 +60,9 @@ syntax and [Encoding](encoding.md) for output formats.
 | `0` | Success |
 | `1` | Image processing failed |
 | `2` | Unknown command or missing required argument |
+
+For exit code 1, read the reported processing error, check the source path,
+run `doctor` for driver capabilities, and confirm the destination is writable.
+For exit code 2, compare the arguments with the command syntax above before
+retrying. A supported filename extension alone does not establish that the
+installed driver can encode that format.

@@ -77,3 +77,12 @@ with public visibility and the encoded MIME type.
 
 Custom backends implement `StoreInterface`. See
 [Extension contracts](api/extension-contracts.md).
+
+## When saving fails
+
+Check that the destination's parent can be created and written by the PHP
+process. Local writes need space for a temporary file and an atomic rename;
+a read-only directory or an existing directory at the file path cannot be a
+valid destination. Check storage permissions and free space before retrying.
+For remote stores, check adapter credentials and write permissions separately
+from image decoding. See [exception contracts](api/exceptions.md).
